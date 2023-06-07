@@ -55,7 +55,7 @@ class HtmlFetchingWorker(Worker):
     def spider_closed(self, chan, spider, reason):
         fs = pipeline_filesystem_interface(self.args.date)
         dir_path = fs.content_path_str
-        worker = Worker("elastic-gen", "publish folder to ES Queue")
+        worker = Worker("meta-gen", "publish folder to Metadata Queue")
         worker.send_items(chan, dir_path)
         print(
             f"Spider {spider} finished with reason: {reason}, dir path: {dir_path}")

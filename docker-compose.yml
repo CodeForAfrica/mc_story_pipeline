@@ -3,12 +3,12 @@ version: "3.8"
 services:
   elasticsearch:
     build:
-      context: apps/elasticsearch
+      context: apps/mc_elasticsearch
       args:
         ELASTIC_VERSION: ${ELASTIC_VERSION:-7.10.1}
     volumes:
       - type: bind
-        source: apps/elasticsearch/config/elasticsearch.yml
+        source: apps/mc_elasticsearch/config/elasticsearch.yml
         target: /usr/share/elasticsearch/config/elasticsearch.yml
         read_only: true
       - elasticsearch_data:/usr/share/elasticsearch/data
@@ -75,7 +75,21 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
-      elasticsearch:
+    command: ["./run.sh"]
+
+  metadata_pipeline:
+    build:
+      context: apps/metadata_pipeline
+      dockerfile: Dockerfile
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./apps/metadata_pipeline/logs:/tmp/metadata_worker
+      - ./data:/app/data
+    networks:
+      - mc_elastic_network
+    depends_on:
+      rabbitmq:
         condition: service_healthy
     command: ["./run.sh"]
 

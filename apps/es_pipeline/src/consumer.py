@@ -5,22 +5,25 @@ import json
 import hashlib
 import time
 import logging
+from typing import List
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 from pipeline.worker import Worker, ListConsumerWorker, run
 from scripts.configure import Plumbing
 
+logger = logging.getLogger(__name__)
+
 
 class ESConsumer(ListConsumerWorker):
     """
-    takes lists of filepaths and prints them.
+    Takes folderpath and process for ES ingest.
     """
 
-    INPUT_BATCH_MSGS = 1  # process 10 messages at a time
+    INPUT_BATCH_MSGS = 1  # process 1 message at a time
 
     def __init__(self, process_name: str, descr: str):
         super().__init__(process_name, descr)
-        self.folders_path = []
+        self.folders_path: List[str] = []
         self.index_name = "mediacloud_search_text"
         self.settings = {
             "settings": {"number_of_shards": 1, "number_of_replicas": 0},
@@ -52,8 +55,8 @@ class ESConsumer(ListConsumerWorker):
         for folder_path in folders_path:
             for root, dirs, files in os.walk(folder_path):
                 for file_name in files:
-                    print(f"Files:{file_name}")
-                    if file_name.endswith(".json"):
+                    if ".html%-extracted_meta.json" in file_name:
+                        logger.info(f"Files:{file_name}")
                         file_path = os.path.join(root, file_name)
                         content = self.read_file_content(file_path)
                         documents.append(content)
@@ -69,39 +72,36 @@ class ESConsumer(ListConsumerWorker):
             content = file.read()
         try:
             item = json.loads(content)
-            url = item["rss_entry"]["link"]
-            pub_date_str = item.get("rss_entry").get("pub_date", "")
-            pub_date = datetime.datetime.strptime(
-                pub_date_str, "%a, %d %b %Y %H:%M:%S %z")
+            meta = item.get("meta")
 
-            if pub_date:
-                es_date = pub_date.strftime("%Y-%m-%dT%H:%M:%S")
+            if meta and isinstance(meta, dict) and meta:
+                url = meta.get("normalized_url")
+
+                url_hash = hashlib.sha256(url.encode("utf-8")).hexdigest()
+                document = {
+                    "_index": self.index_name,
+                    "_id": url_hash,
+                    "_source": {
+                        "domain": meta.get("canonical_domain"),
+                        "first_captured": meta.get("publication_date"),
+                        "host": meta.get("canonical_domain"),
+                        "language": meta.get("language"),
+                        "publication_date": meta.get("publication_date"),
+                        "snippet": meta.get("text_content"),
+                        "surt_url": None,
+                        "text_extraction_method": None,
+                        "title": meta.get("article_title"),
+                        "tld": item.get("tld"),
+                        "url": url,
+                        "version": "1.0",
+                    },
+                }
+                return document
             else:
-                es_date = None
-
-            url_hash = hashlib.sha256(url.encode("utf-8")).hexdigest()
-            document = {
-                "_index": self.index_name,
-                "_id": url_hash,
-                "_source": {
-                    "domain": item.get("rss_entry").get("domain"),
-                    "first_captured": es_date,
-                    "host": item.get("rss_entry").get("domain"),
-                    "language": item.get("language"),
-                    "publication_date": es_date,
-                    "snippet": None,
-                    "surt_url": None,
-                    "text_extraction_method": None,
-                    "title": item.get("rss_entry").get("title", ""),
-                    "tld": item.get("tld"),
-                    "url": url,
-                    "version": "1.0",
-                },
-            }
+                return None
         except json.JSONDecodeError as e:
-            print(f"Error decoding JSON content: {e}")
-
-        return document
+            logger.error(f"Error decoding JSON content: {e}")
+            return None
 
     def ingest_to_elasticsearch(self, documents=None):
         es = Elasticsearch(self.es_url)
@@ -115,10 +115,8 @@ class ESConsumer(ListConsumerWorker):
 
     def send_to_archiving_queue(self, chan, items):
         worker = Worker("archiving-gen", "publish folder to arhchiving Queue")
-        print("sending to archiving queue...")
-        print(items)
+        logger.info("sending to archiving queue...")
         worker.send_items(chan, items)
-        print("sleeping...")
         sys.stdout.flush()
         time.sleep(1)
 

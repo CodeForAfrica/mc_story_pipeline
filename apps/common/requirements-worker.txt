@@ -4,3 +4,4 @@ pika==1.3.2
 rabbitmq-admin==0.2
 elasticsearch==7.10.1
 Scrapy==2.9.0
+mediacloud-metadata

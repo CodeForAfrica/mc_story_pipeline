@@ -1,108 +1,112 @@
-2023-06-07 05:30:05,021 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2023-06-07 05:30:05,040 CRIT Server 'inet_http_server' running without any HTTP authentication checking
-2023-06-07 05:30:05,045 INFO supervisord started with pid 13
-2023-06-07 05:30:06,055 INFO spawned: 'batchscraper_00' with pid 14
-2023-06-07 05:30:06,063 INFO spawned: 'batchscraper_01' with pid 15
-2023-06-07 05:30:06,582 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:06,581 | INFO | pika.adapters.utils.connection_workflow | Pika version 1.3.2 connecting to ('172.28.0.2', 5672)
+2023-06-07 10:00:37,066 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-06-07 10:00:37,098 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-06-07 10:00:37,105 INFO supervisord started with pid 12
+2023-06-07 10:00:38,113 INFO spawned: 'batchscraper_00' with pid 13
+2023-06-07 10:00:38,122 INFO spawned: 'batchscraper_01' with pid 14
+2023-06-07 10:00:38,867 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:00:38,865 | INFO | pika.adapters.utils.connection_workflow | Pika version 1.3.2 connecting to ('172.18.0.2', 5672)
 
-2023-06-07 05:30:06,587 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:06,581 | INFO | pika.adapters.utils.io_services_utils | Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:06,582 | INFO | pika.adapters.utils.connection_workflow | Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2023-06-07 10:00:38,872 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:00:38,866 | INFO | pika.adapters.utils.io_services_utils | Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:00:38,867 | INFO | pika.adapters.utils.connection_workflow | Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
 
-2023-06-07 05:30:06,591 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:06,581 | INFO | pika.adapters.utils.connection_workflow | Pika version 1.3.2 connecting to ('172.28.0.2', 5672)
-2023-06-07 05:30:06,581 | INFO | pika.adapters.utils.io_services_utils | Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:06,582 | INFO | pika.adapters.utils.connection_workflow | Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
-2023-06-07 05:30:06,587 | INFO | pika.adapters.utils.connection_workflow | AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
-2023-06-07 05:30:06,588 | INFO | pika.adapters.utils.connection_workflow | AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
-2023-06-07 05:30:06,588 | INFO | pika.adapters.blocking_connection | Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
-2023-06-07 05:30:06,588 | INFO | pipeline.worker | connected to amqp://rabbitmq:5672
-2023-06-07 05:30:06,589 | INFO | pika.adapters.blocking_connection | Created channel=1
+2023-06-07 10:00:38,877 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:00:38,867 | INFO | pika.adapters.utils.connection_workflow | Pika version 1.3.2 connecting to ('172.18.0.2', 5672)
+2023-06-07 10:00:38,867 | INFO | pika.adapters.utils.io_services_utils | Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:00:38,868 | INFO | pika.adapters.utils.connection_workflow | Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
 
-2023-06-07 05:30:06,595 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:06,588 | INFO | pika.adapters.utils.connection_workflow | AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
-2023-06-07 05:30:06,588 | INFO | pika.adapters.utils.connection_workflow | AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
-2023-06-07 05:30:06,588 | INFO | pika.adapters.blocking_connection | Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
-2023-06-07 05:30:06,588 | INFO | pipeline.worker | connected to amqp://rabbitmq:5672
-2023-06-07 05:30:06,589 | INFO | pika.adapters.blocking_connection | Created channel=1
+2023-06-07 10:00:38,881 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:00:38,878 | INFO | pika.adapters.utils.connection_workflow | AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2023-06-07 10:00:38,879 | INFO | pika.adapters.utils.connection_workflow | AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2023-06-07 10:00:38,879 | INFO | pika.adapters.blocking_connection | Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2023-06-07 10:00:38,879 | INFO | pipeline.worker | connected to amqp://rabbitmq:5672
 
-2023-06-07 05:30:07,600 INFO success: batchscraper_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2023-06-07 05:30:07,601 INFO success: batchscraper_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2023-06-07 05:30:40,604 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,602 | INFO | scrapy.utils.log | Scrapy 2.9.0 started (bot: scrapybot)
-2023-06-07 05:30:40 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: scrapybot)
+2023-06-07 10:00:38,888 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:00:38,879 | INFO | pika.adapters.utils.connection_workflow | AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2023-06-07 10:00:38,879 | INFO | pika.adapters.utils.connection_workflow | AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2023-06-07 10:00:38,880 | INFO | pika.adapters.blocking_connection | Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2023-06-07 10:00:38,880 | INFO | pipeline.worker | connected to amqp://rabbitmq:5672
+2023-06-07 10:00:38,880 | INFO | pika.adapters.blocking_connection | Created channel=1
 
-2023-06-07 05:30:40,637 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,635 | INFO | scrapy.utils.log | Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
-2023-06-07 05:30:40 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
+2023-06-07 10:00:38,897 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:00:38,879 | INFO | pika.adapters.blocking_connection | Created channel=1
 
-2023-06-07 05:30:40,642 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,641 | DEBUG | pipeline.worker | send_items 23
-2023-06-07 05:30:40 [pipeline.worker] DEBUG: send_items 23
+2023-06-07 10:00:39,901 INFO success: batchscraper_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-07 10:00:39,903 INFO success: batchscraper_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-06-07 10:01:09,789 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,787 | INFO | scrapy.utils.log | Scrapy 2.9.0 started (bot: scrapybot)
+2023-06-07 10:01:09 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: scrapybot)
 
-2023-06-07 05:30:40,647 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,641 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:40,642 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:40,642 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40,642 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:40,642 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:40,642 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40,642 | DEBUG | pika.heartbeat | Received heartbeat frame
-2023-06-07 05:30:40 [pika.heartbeat] DEBUG: Received heartbeat frame
-2023-06-07 05:30:40,643 | DEBUG | pika.adapters.utils.io_services_utils | Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40 [pika.adapters.utils.io_services_utils] DEBUG: Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40,643 | DEBUG | pika.heartbeat | Sending heartbeat frame
-2023-06-07 05:30:40 [pika.heartbeat] DEBUG: Sending heartbeat frame
-2023-06-07 05:30:40,643 | DEBUG | pika.heartbeat | Sending heartbeat frame
-2023-06-07 05:30:40 [pika.heartbeat] DEBUG: Sending heartbeat frame
-2023-06-07 05:30:40,643 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:40,643 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:40,643 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40,643 | DEBUG | pika.adapters.select_connection | call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f3785f4f340> with deadline=112830.227732035 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7f3785f4f9a0>>; now=112800.227732035; delay=30.0
-2023-06-07 05:30:40 [pika.adapters.select_connection] DEBUG: call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f3785f4f340> with deadline=112830.227732035 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7f3785f4f9a0>>; now=112800.227732035; delay=30.0
+2023-06-07 10:01:09,828 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,825 | INFO | scrapy.utils.log | Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
+2023-06-07 10:01:09 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
 
-2023-06-07 05:30:40,653 DEBG 'batchscraper_00' stdout output:
+2023-06-07 10:01:09,833 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,831 | DEBUG | pipeline.worker | send_items 23
+2023-06-07 10:01:09 [pipeline.worker] DEBUG: send_items 23
+
+2023-06-07 10:01:09,838 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,831 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:09,831 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09,831 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,832 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09,832 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:09,832 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,833 | DEBUG | pika.heartbeat | Received heartbeat frame
+2023-06-07 10:01:09 [pika.heartbeat] DEBUG: Received heartbeat frame
+2023-06-07 10:01:09,833 | DEBUG | pika.adapters.utils.io_services_utils | Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,833 | DEBUG | pika.heartbeat | Sending heartbeat frame
+2023-06-07 10:01:09 [pika.heartbeat] DEBUG: Sending heartbeat frame
+2023-06-07 10:01:09,833 | DEBUG | pika.heartbeat | Sending heartbeat frame
+2023-06-07 10:01:09 [pika.heartbeat] DEBUG: Sending heartbeat frame
+2023-06-07 10:01:09,833 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:09,833 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09,834 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,834 | DEBUG | pika.adapters.select_connection | call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7ff7be6ae7c0> with deadline=2992.935873321 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7ff7be6aee20>>; now=2962.935873321; delay=30.0
+2023-06-07 10:01:09 [pika.adapters.select_connection] DEBUG: call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7ff7be6ae7c0> with deadline=2992.935873321 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7ff7be6aee20>>; now=2962.935873321; delay=30.0
+2023-06-07 10:01:09,834 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09,834 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:09,834 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:09,848 DEBG 'batchscraper_00' stdout output:
 Spider <class 'src.BatchSpider.BatchSpider'> finished with reason: None, dir path: data/2023/5/18/content/
 
-2023-06-07 05:30:40,658 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,644 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:40,644 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:40 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:40,644 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:40,650 | INFO | scrapy.crawler | Overridden settings:
+2023-06-07 10:01:09,854 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,846 | INFO | scrapy.crawler | Overridden settings:
 {'AUTOTHROTTLE_DEBUG': True,
  'AUTOTHROTTLE_ENABLED': True,
  'AUTOTHROTTLE_TARGET_CONCURRENCY': 10,
  'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
  'COOKIES_ENABLED': False,
  'RETRY_HTTP_CODES': [502, 503, 504, 522, 524, 408, 429]}
-2023-06-07 05:30:40 [scrapy.crawler] INFO: Overridden settings:
+2023-06-07 10:01:09 [scrapy.crawler] INFO: Overridden settings:
 {'AUTOTHROTTLE_DEBUG': True,
  'AUTOTHROTTLE_ENABLED': True,
  'AUTOTHROTTLE_TARGET_CONCURRENCY': 10,
  'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
  'COOKIES_ENABLED': False,
  'RETRY_HTTP_CODES': [502, 503, 504, 522, 524, 408, 429]}
-2023-06-07 05:30:40,652 | WARNING | py.warnings | /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+2023-06-07 10:01:09,847 | WARNING | py.warnings | /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
 
 It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
 
 See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
   return cls(crawler)
 
-2023-06-07 05:30:40 [py.warnings] WARNING: /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+2023-06-07 10:01:09 [py.warnings] WARNING: /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
 
 It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
 
@@ -110,372 +114,126 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
   return cls(crawler)
 
 
-2023-06-07 05:30:40,664 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,655 | DEBUG | scrapy.utils.log | Using reactor: twisted.internet.epollreactor.EPollReactor
-2023-06-07 05:30:40 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2023-06-07 10:01:09,859 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,852 | DEBUG | scrapy.utils.log | Using reactor: twisted.internet.epollreactor.EPollReactor
+2023-06-07 10:01:09 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
 
-2023-06-07 05:30:40,673 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,671 | INFO | scrapy.extensions.telnet | Telnet Password: 9b7340bbb82ebacf
-2023-06-07 05:30:40 [scrapy.extensions.telnet] INFO: Telnet Password: 9b7340bbb82ebacf
+2023-06-07 10:01:09,873 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,871 | INFO | scrapy.extensions.telnet | Telnet Password: dfef47e2bb4b743b
+2023-06-07 10:01:09 [scrapy.extensions.telnet] INFO: Telnet Password: dfef47e2bb4b743b
 
-2023-06-07 05:30:40,729 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,727 | INFO | scrapy.middleware | Enabled extensions:
+2023-06-07 10:01:09,942 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:09,939 | INFO | scrapy.utils.log | Scrapy 2.9.0 started (bot: scrapybot)
+2023-06-07 10:01:09 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: scrapybot)
+
+2023-06-07 10:01:09,947 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:09,946 | INFO | scrapy.middleware | Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.memusage.MemoryUsage',
  'scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.throttle.AutoThrottle']
-2023-06-07 05:30:40 [scrapy.middleware] INFO: Enabled extensions:
+2023-06-07 10:01:09 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.memusage.MemoryUsage',
  'scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.throttle.AutoThrottle']
 
-2023-06-07 05:30:40,775 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,772 | INFO | scrapy.middleware | Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2023-06-07 05:30:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-07 10:01:09,950 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:09,946 | INFO | scrapy.utils.log | Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
+2023-06-07 10:01:09 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
 
-2023-06-07 05:30:40,780 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,774 | INFO | scrapy.middleware | Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2023-06-07 05:30:40 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2023-06-07 05:30:40,774 | INFO | scrapy.middleware | Enabled item pipelines:
-[]
-2023-06-07 05:30:40 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2023-06-07 05:30:40,774 | INFO | scrapy.core.engine | Spider opened
-2023-06-07 05:30:40 [scrapy.core.engine] INFO: Spider opened
-
-2023-06-07 05:30:40,867 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,866 | INFO | scrapy.extensions.logstats | Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2023-06-07 05:30:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-
-2023-06-07 05:30:40,870 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:40,867 | INFO | scrapy.extensions.telnet | Telnet console listening on 127.0.0.1:6023
-2023-06-07 05:30:40 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
-
-2023-06-07 05:30:40,883 DEBG 'batchscraper_00' stdout output:
-Found a batch of size 5
-
-2023-06-07 05:30:41,424 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,422 | INFO | scrapy.extensions.throttle | slot: www.elfagr.org | conc: 1 | delay: 2526 ms (-2473) | latency:  522 ms | size: 16393 bytes
-2023-06-07 05:30:41 [scrapy.extensions.throttle] INFO: slot: www.elfagr.org | conc: 1 | delay: 2526 ms (-2473) | latency:  522 ms | size: 16393 bytes
-
-2023-06-07 05:30:41,427 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,424 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.elfagr.org/4690601> (referer: None)
-2023-06-07 05:30:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.elfagr.org/4690601> (referer: None)
-
-2023-06-07 05:30:41,461 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,459 | INFO | scrapy.extensions.throttle | slot: zionqmfau.blogdomago.com | conc: 1 | delay: 2516 ms (-2483) | latency:  330 ms | size:  6827 bytes
-2023-06-07 05:30:41 [scrapy.extensions.throttle] INFO: slot: zionqmfau.blogdomago.com | conc: 1 | delay: 2516 ms (-2483) | latency:  330 ms | size:  6827 bytes
-
-2023-06-07 05:30:41,463 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,460 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://zionqmfau.blogdomago.com/21462315/plenty-of-tips-for-learning-to-be-a-hvac-accomplishment> (referer: None)
-2023-06-07 05:30:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zionqmfau.blogdomago.com/21462315/plenty-of-tips-for-learning-to-be-a-hvac-accomplishment> (referer: None)
-
-2023-06-07 05:30:41,538 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,536 | DEBUG | pipeline.worker | send_items 1
-2023-06-07 05:30:41 [pipeline.worker] DEBUG: send_items 1
-
-2023-06-07 05:30:41,541 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,537 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:41,537 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:41,537 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41,538 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:41,538 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:41,538 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-
-2023-06-07 05:30:41,575 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,573 | DEBUG | pipeline.worker | send_items 1
-
-2023-06-07 05:30:41,579 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41 [pipeline.worker] DEBUG: send_items 1
-2023-06-07 05:30:41,573 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:41,574 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:41,574 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41,574 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:41,574 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:41,574 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-
-2023-06-07 05:30:41,731 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,729 | INFO | scrapy.extensions.throttle | slot: sa24.co | conc: 1 | delay: 2541 ms (-2458) | latency:  838 ms | size:  2970 bytes
-2023-06-07 05:30:41 [scrapy.extensions.throttle] INFO: slot: sa24.co | conc: 1 | delay: 2541 ms (-2458) | latency:  838 ms | size:  2970 bytes
-
-2023-06-07 05:30:41,734 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,731 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://sa24.co/show16270664.html> (referer: None)
-2023-06-07 05:30:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sa24.co/show16270664.html> (referer: None)
-
-2023-06-07 05:30:41,846 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41,845 | DEBUG | pipeline.worker | send_items 1
-
-2023-06-07 05:30:41,848 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:41 [pipeline.worker] DEBUG: send_items 1
-2023-06-07 05:30:41,845 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:41,845 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:41,846 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41,846 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:41,847 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:41 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:41,847 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:41 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-
-2023-06-07 05:30:44,886 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:44,884 | INFO | scrapy.extensions.throttle | slot: www.leiagora.com.br | conc: 1 | delay: 2700 ms (-2299) | latency: 4000 ms | size: 12069 bytes
-2023-06-07 05:30:44 [scrapy.extensions.throttle] INFO: slot: www.leiagora.com.br | conc: 1 | delay: 2700 ms (-2299) | latency: 4000 ms | size: 12069 bytes
-
-2023-06-07 05:30:44,889 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:44,887 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.leiagora.com.br/noticia/137491/expert-aponta-a-frequencia-ideal-para-a-lavagem-de-cada-tipo-de-cabelo> (referer: None)
-2023-06-07 05:30:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.leiagora.com.br/noticia/137491/expert-aponta-a-frequencia-ideal-para-a-lavagem-de-cada-tipo-de-cabelo> (referer: None)
-
-2023-06-07 05:30:45,002 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45,000 | DEBUG | pipeline.worker | send_items 1
-
-2023-06-07 05:30:45,006 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45 [pipeline.worker] DEBUG: send_items 1
-2023-06-07 05:30:45,001 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:45,001 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:45,001 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:45 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:45,002 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:45,002 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:45,002 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:45 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-
-2023-06-07 05:30:45,810 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45,808 | INFO | scrapy.extensions.throttle | slot: looniepolitics.com | conc: 1 | delay: 2745 ms (-2254) | latency: 4912 ms | size: 15411 bytes
-2023-06-07 05:30:45 [scrapy.extensions.throttle] INFO: slot: looniepolitics.com | conc: 1 | delay: 2745 ms (-2254) | latency: 4912 ms | size: 15411 bytes
-
-2023-06-07 05:30:45,813 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45,809 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://looniepolitics.com/kitigan-zibi-anishinabeg-first-nation-endorses-sparks-bid-for-ottawa-senators/> (referer: None)
-2023-06-07 05:30:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://looniepolitics.com/kitigan-zibi-anishinabeg-first-nation-endorses-sparks-bid-for-ottawa-senators/> (referer: None)
-
-2023-06-07 05:30:45,926 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45,925 | DEBUG | pipeline.worker | send_items 1
-2023-06-07 05:30:45 [pipeline.worker] DEBUG: send_items 1
-
-2023-06-07 05:30:45,930 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45,925 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f3785f4f610>>)
-2023-06-07 05:30:45,925 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:45,925 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:45 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:45,926 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:45,926 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:45 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:45,926 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:45 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58116), raddr=('172.28.0.2', 5672)>
-
-2023-06-07 05:30:45,934 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45,932 | INFO | scrapy.core.engine | Closing spider (finished)
-2023-06-07 05:30:45 [scrapy.core.engine] INFO: Closing spider (finished)
-2023-06-07 05:30:45,933 | INFO | scrapy.statscollectors | Dumping Scrapy stats:
-{'downloader/request_bytes': 1333,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 57128,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
- 'elapsed_time_seconds': 5.066986,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 6, 7, 5, 30, 45, 933282),
- 'httpcompression/response_bytes': 216565,
- 'httpcompression/response_count': 5,
- 'log_count/DEBUG': 41,
- 'log_count/INFO': 15,
- 'log_count/WARNING': 1,
- 'memusage/max': 2653368320,
- 'memusage/startup': 2653368320,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2023, 6, 7, 5, 30, 40, 866296)}
-
-2023-06-07 05:30:45,939 DEBG 'batchscraper_00' stderr output:
-2023-06-07 05:30:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1333,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 57128,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
- 'elapsed_time_seconds': 5.066986,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 6, 7, 5, 30, 45, 933282),
- 'httpcompression/response_bytes': 216565,
- 'httpcompression/response_count': 5,
- 'log_count/DEBUG': 41,
- 'log_count/INFO': 15,
- 'log_count/WARNING': 1,
- 'memusage/max': 2653368320,
- 'memusage/startup': 2653368320,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2023, 6, 7, 5, 30, 40, 866296)}
-2023-06-07 05:30:45,933 | INFO | scrapy.core.engine | Spider closed (finished)
-2023-06-07 05:30:45 [scrapy.core.engine] INFO: Spider closed (finished)
-
-2023-06-07 05:30:47,137 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 140241499038576 for <Subprocess at 140241499039152 with name batchscraper_00 in state RUNNING> (stdout)>
-2023-06-07 05:30:47,139 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140241497289296 for <Subprocess at 140241499039152 with name batchscraper_00 in state RUNNING> (stderr)>
-2023-06-07 05:30:47,140 INFO exited: batchscraper_00 (exit status 0; expected)
-2023-06-07 05:30:47,142 DEBG received SIGCHLD indicating a child quit
-2023-06-07 05:30:47,641 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,640 | INFO | scrapy.utils.log | Scrapy 2.9.0 started (bot: scrapybot)
-2023-06-07 05:30:47 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: scrapybot)
-
-2023-06-07 05:30:47,646 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,644 | INFO | scrapy.utils.log | Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
-2023-06-07 05:30:47 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.12 (main, May 11 2022, 08:03:15) - [GCC 10.2.1 20210110], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Linux-5.15.49-linuxkit-x86_64-with-glibc2.31
-
-2023-06-07 05:30:47,651 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,649 | DEBUG | pipeline.worker | send_items 23
-2023-06-07 05:30:47 [pipeline.worker] DEBUG: send_items 23
-
-2023-06-07 05:30:47,655 DEBG 'batchscraper_01' stdout output:
+2023-06-07 10:01:09,955 DEBG 'batchscraper_01' stdout output:
 Spider <class 'src.BatchSpider.BatchSpider'> finished with reason: None, dir path: data/2023/5/18/content/
 
-2023-06-07 05:30:47,695 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,650 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:47,650 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:47,650 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47,650 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:47,650 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:47,651 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47,651 | DEBUG | pika.heartbeat | Received heartbeat frame
-2023-06-07 05:30:47 [pika.heartbeat] DEBUG: Received heartbeat frame
-2023-06-07 05:30:47,651 | DEBUG | pika.adapters.utils.io_services_utils | Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47 [pika.adapters.utils.io_services_utils] DEBUG: Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47,651 | DEBUG | pika.heartbeat | Sending heartbeat frame
-2023-06-07 05:30:47 [pika.heartbeat] DEBUG: Sending heartbeat frame
-2023-06-07 05:30:47,651 | DEBUG | pika.heartbeat | Sending heartbeat frame
-2023-06-07 05:30:47 [pika.heartbeat] DEBUG: Sending heartbeat frame
-2023-06-07 05:30:47,651 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:47,652 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:47,652 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47,652 | DEBUG | pika.adapters.select_connection | call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f7b71786370> with deadline=112837.236302577 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7f7b717865b0>>; now=112807.236302577; delay=30.0
-2023-06-07 05:30:47 [pika.adapters.select_connection] DEBUG: call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f7b71786370> with deadline=112837.236302577 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7f7b717865b0>>; now=112807.236302577; delay=30.0
-2023-06-07 05:30:47,652 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:47,652 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:47 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:47,652 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:47 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
+2023-06-07 10:01:09,961 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:09,950 | DEBUG | pipeline.worker | send_items 23
+2023-06-07 10:01:09 [pipeline.worker] DEBUG: send_items 23
+2023-06-07 10:01:09,950 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:09,950 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09,951 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,951 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09,951 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:09,951 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,952 | DEBUG | pika.heartbeat | Received heartbeat frame
+2023-06-07 10:01:09 [pika.heartbeat] DEBUG: Received heartbeat frame
+2023-06-07 10:01:09,952 | DEBUG | pika.adapters.utils.io_services_utils | Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Recv would block on <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,952 | DEBUG | pika.heartbeat | Sending heartbeat frame
+2023-06-07 10:01:09 [pika.heartbeat] DEBUG: Sending heartbeat frame
+2023-06-07 10:01:09,952 | DEBUG | pika.heartbeat | Sending heartbeat frame
+2023-06-07 10:01:09 [pika.heartbeat] DEBUG: Sending heartbeat frame
+2023-06-07 10:01:09,952 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:09,952 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:09,952 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09,952 | DEBUG | pika.adapters.select_connection | call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f1106252970> with deadline=2993.054505211 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7f1106252fd0>>; now=2963.054505211; delay=30.0
+2023-06-07 10:01:09 [pika.adapters.select_connection] DEBUG: call_later: added timeout <pika.adapters.select_connection._Timeout object at 0x7f1106252970> with deadline=2993.054505211 and callback=<bound method HeartbeatChecker._send_heartbeat of <pika.heartbeat.HeartbeatChecker object at 0x7f1106252fd0>>; now=2963.054505211; delay=30.0
+2023-06-07 10:01:09,953 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:09,953 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:09 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:09,953 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:09 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
 
-2023-06-07 05:30:47,710 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,659 | INFO | scrapy.crawler | Overridden settings:
+2023-06-07 10:01:09,969 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:09,961 | INFO | scrapy.crawler | Overridden settings:
 {'AUTOTHROTTLE_DEBUG': True,
  'AUTOTHROTTLE_ENABLED': True,
  'AUTOTHROTTLE_TARGET_CONCURRENCY': 10,
  'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
  'COOKIES_ENABLED': False,
  'RETRY_HTTP_CODES': [502, 503, 504, 522, 524, 408, 429]}
-2023-06-07 05:30:47 [scrapy.crawler] INFO: Overridden settings:
+2023-06-07 10:01:09 [scrapy.crawler] INFO: Overridden settings:
 {'AUTOTHROTTLE_DEBUG': True,
  'AUTOTHROTTLE_ENABLED': True,
  'AUTOTHROTTLE_TARGET_CONCURRENCY': 10,
  'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
  'COOKIES_ENABLED': False,
  'RETRY_HTTP_CODES': [502, 503, 504, 522, 524, 408, 429]}
-2023-06-07 05:30:47,661 | WARNING | py.warnings | /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+2023-06-07 10:01:09,962 | WARNING | py.warnings | /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
 
 It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
 
 See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
   return cls(crawler)
 
-2023-06-07 05:30:47 [py.warnings] WARNING: /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+2023-06-07 10:01:09 [py.warnings] WARNING: /usr/local/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
 
 It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
 
 See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
   return cls(crawler)
 
-2023-06-07 05:30:47,663 | DEBUG | scrapy.utils.log | Using reactor: twisted.internet.epollreactor.EPollReactor
-2023-06-07 05:30:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
-2023-06-07 05:30:47,683 | INFO | scrapy.extensions.telnet | Telnet Password: 7712b9bf70787262
-2023-06-07 05:30:47 [scrapy.extensions.telnet] INFO: Telnet Password: 7712b9bf70787262
+2023-06-07 10:01:09,965 | DEBUG | scrapy.utils.log | Using reactor: twisted.internet.epollreactor.EPollReactor
+2023-06-07 10:01:09 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
 
-2023-06-07 05:30:47,787 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,786 | INFO | scrapy.middleware | Enabled extensions:
-['scrapy.extensions.corestats.CoreStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.memusage.MemoryUsage',
- 'scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.throttle.AutoThrottle']
-2023-06-07 05:30:47 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.corestats.CoreStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.memusage.MemoryUsage',
- 'scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.throttle.AutoThrottle']
+2023-06-07 10:01:09,988 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:09,986 | INFO | scrapy.extensions.telnet | Telnet Password: 46a19030b7172230
+2023-06-07 10:01:09 [scrapy.extensions.telnet] INFO: Telnet Password: 46a19030b7172230
 
-2023-06-07 05:30:47,841 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,837 | INFO | scrapy.middleware | Enabled downloader middlewares:
+2023-06-07 10:01:10,020 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,016 | INFO | scrapy.middleware | Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -487,8 +245,42 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
 
-2023-06-07 05:30:47,845 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2023-06-07 10:01:10,024 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,019 | INFO | scrapy.middleware | Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-07 10:01:10,019 | INFO | scrapy.middleware | Enabled item pipelines:
+[]
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2023-06-07 10:01:10,019 | INFO | scrapy.core.engine | Spider opened
+2023-06-07 10:01:10 [scrapy.core.engine] INFO: Spider opened
+
+2023-06-07 10:01:10,067 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:10,065 | INFO | scrapy.middleware | Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+
+2023-06-07 10:01:10,127 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:10,123 | INFO | scrapy.middleware | Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -499,219 +291,677 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2023-06-07 05:30:47,839 | INFO | scrapy.middleware | Enabled spider middlewares:
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+
+2023-06-07 10:01:10,134 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,127 | INFO | scrapy.extensions.logstats | Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-07 10:01:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-07 10:01:10,129 | INFO | scrapy.extensions.telnet | Telnet console listening on 127.0.0.1:6023
+2023-06-07 10:01:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+
+2023-06-07 10:01:10,138 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:10,127 | INFO | scrapy.middleware | Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2023-06-07 05:30:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2023-06-07 05:30:47,840 | INFO | scrapy.middleware | Enabled item pipelines:
+2023-06-07 10:01:10,127 | INFO | scrapy.middleware | Enabled item pipelines:
 []
-2023-06-07 05:30:47 [scrapy.middleware] INFO: Enabled item pipelines:
+2023-06-07 10:01:10 [scrapy.middleware] INFO: Enabled item pipelines:
 []
-2023-06-07 05:30:47,840 | INFO | scrapy.core.engine | Spider opened
-2023-06-07 05:30:47 [scrapy.core.engine] INFO: Spider opened
+2023-06-07 10:01:10,127 | INFO | scrapy.core.engine | Spider opened
+2023-06-07 10:01:10 [scrapy.core.engine] INFO: Spider opened
 
-2023-06-07 05:30:47,924 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,922 | INFO | scrapy.extensions.logstats | Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2023-06-07 05:30:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-07 10:01:10,156 DEBG 'batchscraper_00' stdout output:
+Found a batch of size 10
 
-2023-06-07 05:30:47,927 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:47,924 | INFO | scrapy.extensions.telnet | Telnet console listening on 127.0.0.1:6023
-2023-06-07 05:30:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-06-07 10:01:10,268 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:10,265 | INFO | scrapy.extensions.logstats | Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
 
-2023-06-07 05:30:47,941 DEBG 'batchscraper_01' stdout output:
-Found a batch of size 5
+2023-06-07 10:01:10,272 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-07 10:01:10,267 | INFO | scrapy.extensions.telnet | Telnet console listening on 127.0.0.1:6024
+2023-06-07 10:01:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
 
-2023-06-07 05:30:49,206 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,205 | INFO | scrapy.extensions.throttle | slot: www.shinailbo.co.kr | conc: 1 | delay: 2551 ms (-2448) | latency: 1030 ms | size: 23382 bytes
-2023-06-07 05:30:49 [scrapy.extensions.throttle] INFO: slot: www.shinailbo.co.kr | conc: 1 | delay: 2551 ms (-2448) | latency: 1030 ms | size: 23382 bytes
+2023-06-07 10:01:10,293 DEBG 'batchscraper_01' stdout output:
+Found a batch of size 10
 
-2023-06-07 05:30:49,210 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,207 | DEBUG | scrapy.core.engine | Crawled (200) <GET http://www.shinailbo.co.kr/news/articleView.html?idxno=1705191> (referer: None)
-2023-06-07 05:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.shinailbo.co.kr/news/articleView.html?idxno=1705191> (referer: None)
+2023-06-07 10:01:10,528 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,526 | INFO | scrapy.extensions.throttle | slot: jaredknfrd.blogdomago.com | conc: 1 | delay: 2517 ms (-2482) | latency:  357 ms | size:  4306 bytes
+2023-06-07 10:01:10 [scrapy.extensions.throttle] INFO: slot: jaredknfrd.blogdomago.com | conc: 1 | delay: 2517 ms (-2482) | latency:  357 ms | size:  4306 bytes
 
-2023-06-07 05:30:49,328 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,325 | DEBUG | pipeline.worker | send_items 1
-2023-06-07 05:30:49 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:10,531 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,527 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://jaredknfrd.blogdomago.com/21462431/nh%C3%A0-l%E1%BA%AFp-gh%C3%A9p-2-t%E1%BA%A7ng-3-ph%C3%B2ng-ng%E1%BB%A7> (referer: None)
+2023-06-07 10:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://jaredknfrd.blogdomago.com/21462431/nh%C3%A0-l%E1%BA%AFp-gh%C3%A9p-2-t%E1%BA%A7ng-3-ph%C3%B2ng-ng%E1%BB%A7> (referer: None)
 
-2023-06-07 05:30:49,333 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,326 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:49,326 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:49,326 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49,327 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:49,327 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:49,328 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
+2023-06-07 10:01:10,643 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,641 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:10 [pipeline.worker] DEBUG: send_items 1
 
-2023-06-07 05:30:49,339 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,334 | INFO | scrapy.extensions.throttle | slot: index.hu | conc: 1 | delay: 2561 ms (-2438) | latency: 1235 ms | size: 44196 bytes
-2023-06-07 05:30:49 [scrapy.extensions.throttle] INFO: slot: index.hu | conc: 1 | delay: 2561 ms (-2438) | latency: 1235 ms | size: 44196 bytes
+2023-06-07 10:01:10,649 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,642 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:10,642 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:10,642 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10,643 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:10,643 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:10,643 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
 
-2023-06-07 05:30:49,343 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,340 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://index.hu/kulfold/2023/05/18/orosz-ukran-konfliktus-haboru-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-kreml-bahmus-percrol-percre/a-szakerto-szerint-harom-oka-lehet-oroszorszag-raketatamadasainak/> (referer: None)
-2023-06-07 05:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://index.hu/kulfold/2023/05/18/orosz-ukran-konfliktus-haboru-moszkva-kijev-vlagyimir-putyin-volodimir-zelenszkij-kreml-bahmus-percrol-percre/a-szakerto-szerint-harom-oka-lehet-oroszorszag-raketatamadasainak/> (referer: None)
+2023-06-07 10:01:10,715 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,713 | INFO | scrapy.extensions.throttle | slot: www.bmetro.co.zw | conc: 1 | delay: 2512 ms (-2487) | latency:  251 ms | size: 16946 bytes
+2023-06-07 10:01:10 [scrapy.extensions.throttle] INFO: slot: www.bmetro.co.zw | conc: 1 | delay: 2512 ms (-2487) | latency:  251 ms | size: 16946 bytes
 
-2023-06-07 05:30:49,460 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,455 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:10,717 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,715 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.bmetro.co.zw/elders-pool-league-gets-leadership/> (referer: None)
+2023-06-07 10:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bmetro.co.zw/elders-pool-league-gets-leadership/> (referer: None)
 
-2023-06-07 05:30:49,464 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49 [pipeline.worker] DEBUG: send_items 1
-2023-06-07 05:30:49,456 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:49,456 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:49,456 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49,456 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:49,456 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:49,457 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
+2023-06-07 10:01:10,754 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,752 | INFO | scrapy.extensions.throttle | slot: claytonzmsbm.blogdomago.com | conc: 1 | delay: 2517 ms (-2482) | latency:  357 ms | size:  5023 bytes
+2023-06-07 10:01:10 [scrapy.extensions.throttle] INFO: slot: claytonzmsbm.blogdomago.com | conc: 1 | delay: 2517 ms (-2482) | latency:  357 ms | size:  5023 bytes
 
-2023-06-07 05:30:49,541 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,540 | INFO | scrapy.extensions.throttle | slot: www.theoaklandpress.com | conc: 1 | delay: 2542 ms (-2457) | latency:  852 ms | size: 47288 bytes
-2023-06-07 05:30:49 [scrapy.extensions.throttle] INFO: slot: www.theoaklandpress.com | conc: 1 | delay: 2542 ms (-2457) | latency:  852 ms | size: 47288 bytes
+2023-06-07 10:01:10,758 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,754 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://claytonzmsbm.blogdomago.com/21470697/en-son-be%C5%9F-konya-web-sitesi-yapan-firmalar-kentsel-haber> (referer: None)
+2023-06-07 10:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://claytonzmsbm.blogdomago.com/21470697/en-son-be%C5%9F-konya-web-sitesi-yapan-firmalar-kentsel-haber> (referer: None)
 
-2023-06-07 05:30:49,545 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,543 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.theoaklandpress.com/2023/05/17/photo-gallery-from-south-lyon-at-lakeland-in-lakes-valley-conference-baseball-action/> (referer: None)
-2023-06-07 05:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.theoaklandpress.com/2023/05/17/photo-gallery-from-south-lyon-at-lakeland-in-lakes-valley-conference-baseball-action/> (referer: None)
+2023-06-07 10:01:10,892 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,888 | DEBUG | pipeline.worker | send_items 1
 
-2023-06-07 05:30:49,660 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,658 | DEBUG | pipeline.worker | send_items 1
-2023-06-07 05:30:49 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:10,898 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:10,888 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:10,889 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:10,889 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10,890 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:10,890 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:10,890 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
 
-2023-06-07 05:30:49,662 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:49,658 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:49,659 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:49,659 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49,659 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:49,659 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:49 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:49,659 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:49 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
+2023-06-07 10:01:10,915 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10,912 | DEBUG | pipeline.worker | send_items 1
 
-2023-06-07 05:30:50,204 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:50,202 | INFO | scrapy.extensions.throttle | slot: malaysiaindru.my | conc: 1 | delay: 2612 ms (-2387) | latency: 2245 ms | size: 14161 bytes
-2023-06-07 05:30:50 [scrapy.extensions.throttle] INFO: slot: malaysiaindru.my | conc: 1 | delay: 2612 ms (-2387) | latency: 2245 ms | size: 14161 bytes
+2023-06-07 10:01:10,918 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:10 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:10,912 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:10,912 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:10,913 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10,913 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:10,913 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:10 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:10,913 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:10 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
 
-2023-06-07 05:30:50,208 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:50,204 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://malaysiaindru.my/215026> (referer: None)
-2023-06-07 05:30:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://malaysiaindru.my/215026> (referer: None)
+2023-06-07 10:01:11,184 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,178 | INFO | scrapy.extensions.throttle | slot: www.boredpanda.com | conc: 1 | delay: 2541 ms (-2458) | latency:  825 ms | size: 78244 bytes
+2023-06-07 10:01:11 [scrapy.extensions.throttle] INFO: slot: www.boredpanda.com | conc: 1 | delay: 2541 ms (-2458) | latency:  825 ms | size: 78244 bytes
 
-2023-06-07 05:30:50,325 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:50,322 | DEBUG | pipeline.worker | send_items 1
-2023-06-07 05:30:50 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:11,187 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,183 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.boredpanda.com/neighbor-trash-can-garage/> (referer: None)
+2023-06-07 10:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.boredpanda.com/neighbor-trash-can-garage/> (referer: None)
 
-2023-06-07 05:30:50,328 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:50,322 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:50 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:50,322 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:50 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:50,322 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:50 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:50,323 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:50 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:50,323 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:50 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:50,323 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:50 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
+2023-06-07 10:01:11,313 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,308 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:11 [pipeline.worker] DEBUG: send_items 1
 
-2023-06-07 05:30:52,971 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:52,968 | INFO | scrapy.extensions.throttle | slot: www.stegenherald.com | conc: 1 | delay: 2725 ms (-2274) | latency: 4502 ms | size: 44826 bytes
-2023-06-07 05:30:52 [scrapy.extensions.throttle] INFO: slot: www.stegenherald.com | conc: 1 | delay: 2725 ms (-2274) | latency: 4502 ms | size: 44826 bytes
+2023-06-07 10:01:11,318 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,309 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:11,309 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11,309 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11,309 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11,309 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:11,309 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
 
-2023-06-07 05:30:52,973 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:52,969 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.stegenherald.com/2023/05/18/2-in-a-row-2-in-a-row/> (referer: None)
-2023-06-07 05:30:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.stegenherald.com/2023/05/18/2-in-a-row-2-in-a-row/> (referer: None)
+2023-06-07 10:01:11,331 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,329 | INFO | scrapy.extensions.throttle | slot: www.haarlemsdagblad.nl | conc: 1 | delay: 2543 ms (-2456) | latency:  872 ms | size: 35223 bytes
+2023-06-07 10:01:11 [scrapy.extensions.throttle] INFO: slot: www.haarlemsdagblad.nl | conc: 1 | delay: 2543 ms (-2456) | latency:  872 ms | size: 35223 bytes
 
-2023-06-07 05:30:53,085 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:53,082 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:11,334 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,333 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.haarlemsdagblad.nl/cnt/dmf20230517_65952561> (referer: None)
 
-2023-06-07 05:30:53,091 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:53 [pipeline.worker] DEBUG: send_items 1
-2023-06-07 05:30:53,083 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:53 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f7b71786190>>)
-2023-06-07 05:30:53,083 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:53 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
-2023-06-07 05:30:53,083 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:53 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:53,084 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:53 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
-2023-06-07 05:30:53,084 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
-2023-06-07 05:30:53 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
-2023-06-07 05:30:53,084 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
-2023-06-07 05:30:53 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.28.0.4', 58128), raddr=('172.28.0.2', 5672)>
+2023-06-07 10:01:11,337 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.haarlemsdagblad.nl/cnt/dmf20230517_65952561> (referer: None)
 
-2023-06-07 05:30:53,097 DEBG 'batchscraper_01' stderr output:
-2023-06-07 05:30:53,091 | INFO | scrapy.core.engine | Closing spider (finished)
-2023-06-07 05:30:53 [scrapy.core.engine] INFO: Closing spider (finished)
-2023-06-07 05:30:53,092 | INFO | scrapy.statscollectors | Dumping Scrapy stats:
-{'downloader/request_bytes': 1451,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 178656,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
- 'elapsed_time_seconds': 5.168838,
+2023-06-07 10:01:11,384 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,382 | INFO | scrapy.extensions.throttle | slot: www.netflu.com.br | conc: 1 | delay: 2551 ms (-2448) | latency: 1030 ms | size: 26974 bytes
+2023-06-07 10:01:11 [scrapy.extensions.throttle] INFO: slot: www.netflu.com.br | conc: 1 | delay: 2551 ms (-2448) | latency: 1030 ms | size: 26974 bytes
+
+2023-06-07 10:01:11,387 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,384 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.netflu.com.br/fluminense-acerta-renovacao-de-volante-ate-o-fim-de-2024/> (referer: None)
+2023-06-07 10:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.netflu.com.br/fluminense-acerta-renovacao-de-volante-ate-o-fim-de-2024/> (referer: None)
+
+2023-06-07 10:01:11,395 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,393 | INFO | scrapy.extensions.throttle | slot: amaderorthoneeti.com | conc: 1 | delay: 2554 ms (-2445) | latency: 1099 ms | size:  7405 bytes
+2023-06-07 10:01:11 [scrapy.extensions.throttle] INFO: slot: amaderorthoneeti.com | conc: 1 | delay: 2554 ms (-2445) | latency: 1099 ms | size:  7405 bytes
+
+2023-06-07 10:01:11,399 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,394 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://amaderorthoneeti.com/new/2023/05/18/360896/> (referer: None)
+2023-06-07 10:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://amaderorthoneeti.com/new/2023/05/18/360896/> (referer: None)
+
+2023-06-07 10:01:11,452 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,450 | DEBUG | pipeline.worker | send_items 1
+
+2023-06-07 10:01:11,455 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:11,451 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:11,451 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11,451 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11,452 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11,452 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:11,452 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:11,502 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,499 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:11 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:11,509 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,499 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:11,499 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11,499 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11,500 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11,500 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:11,500 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:11,518 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,516 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:11 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:11,521 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:11,516 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:11,517 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11,517 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11,517 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11,517 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:11,517 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:11,705 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,703 | INFO | scrapy.extensions.throttle | slot: www.piquenewsmagazine.com | conc: 1 | delay: 2565 ms (-2434) | latency: 1306 ms | size: 22094 bytes
+2023-06-07 10:01:11 [scrapy.extensions.throttle] INFO: slot: www.piquenewsmagazine.com | conc: 1 | delay: 2565 ms (-2434) | latency: 1306 ms | size: 22094 bytes
+
+2023-06-07 10:01:11,711 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,705 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.piquenewsmagazine.com/science-news/top-senate-dem-congress-must-move-quickly-on-artificial-intelligence-legislation-7020248> (referer: None)
+2023-06-07 10:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.piquenewsmagazine.com/science-news/top-senate-dem-congress-must-move-quickly-on-artificial-intelligence-legislation-7020248> (referer: None)
+
+2023-06-07 10:01:11,824 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,822 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:11 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:11,831 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,822 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:11,823 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11,823 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11,824 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11,824 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:11,824 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:11,851 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,849 | INFO | scrapy.extensions.throttle | slot: response.jp | conc: 1 | delay: 2572 ms (-2427) | latency: 1447 ms | size: 25562 bytes
+2023-06-07 10:01:11 [scrapy.extensions.throttle] INFO: slot: response.jp | conc: 1 | delay: 2572 ms (-2427) | latency: 1447 ms | size: 25562 bytes
+
+2023-06-07 10:01:11,856 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,852 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://response.jp/article/2023/05/19/371119.html> (referer: None)
+2023-06-07 10:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://response.jp/article/2023/05/19/371119.html> (referer: None)
+
+2023-06-07 10:01:11,971 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,969 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:11 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:11,975 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:11,970 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:11,970 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:11,970 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11,970 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:11,970 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:11 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:11,971 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:11 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:12,081 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,079 | INFO | scrapy.extensions.throttle | slot: mediacoverage.com | conc: 1 | delay: 2587 ms (-2412) | latency: 1753 ms | size: 27843 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: mediacoverage.com | conc: 1 | delay: 2587 ms (-2412) | latency: 1753 ms | size: 27843 bytes
+
+2023-06-07 10:01:12,084 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,081 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://mediacoverage.com/mercer-global-advisors-inc-increases-stake-in-gsk/> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://mediacoverage.com/mercer-global-advisors-inc-increases-stake-in-gsk/> (referer: None)
+
+2023-06-07 10:01:12,198 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,196 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:12 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:12,204 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,197 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12,197 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12,197 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12,198 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12,198 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:12,198 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:12,208 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,205 | INFO | scrapy.extensions.throttle | slot: news.mynavi.jp | conc: 1 | delay: 2580 ms (-2419) | latency: 1600 ms | size:175413 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: news.mynavi.jp | conc: 1 | delay: 2580 ms (-2419) | latency: 1600 ms | size:175413 bytes
+
+2023-06-07 10:01:12,212 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,206 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://news.mynavi.jp/article/20230519-2681142/> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://news.mynavi.jp/article/20230519-2681142/> (referer: None)
+
+2023-06-07 10:01:12,226 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,221 | INFO | scrapy.extensions.throttle | slot: www.delabahia.com.ar | conc: 1 | delay: 2592 ms (-2407) | latency: 1854 ms | size: 15155 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: www.delabahia.com.ar | conc: 1 | delay: 2592 ms (-2407) | latency: 1854 ms | size: 15155 bytes
+
+2023-06-07 10:01:12,229 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,223 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.delabahia.com.ar/hospitalizan-a-un-joven-que-sufrio-heridas-en-un-choque-5/> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.delabahia.com.ar/hospitalizan-a-un-joven-que-sufrio-heridas-en-un-choque-5/> (referer: None)
+
+2023-06-07 10:01:12,306 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,304 | INFO | scrapy.extensions.throttle | slot: blog.goo.ne.jp | conc: 1 | delay: 2591 ms (-2408) | latency: 1838 ms | size: 19329 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: blog.goo.ne.jp | conc: 1 | delay: 2591 ms (-2408) | latency: 1838 ms | size: 19329 bytes
+
+2023-06-07 10:01:12,311 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,306 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://blog.goo.ne.jp/ruri_ruri_rurichan/e/4498c9670ca1383eeaaa2b244c08edde> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://blog.goo.ne.jp/ruri_ruri_rurichan/e/4498c9670ca1383eeaaa2b244c08edde> (referer: None)
+
+2023-06-07 10:01:12,328 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,327 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:12 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:12,333 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,327 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12,327 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12,327 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12,328 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12,328 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:12,328 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:12,340 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,338 | DEBUG | pipeline.worker | send_items 1
+
+2023-06-07 10:01:12,346 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:12,338 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:12,339 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12,339 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12,340 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12,340 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:12,340 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:12,426 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,423 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:12 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:12,434 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,423 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:12,423 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12,424 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12,424 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12,425 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:12,429 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:12,559 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,557 | INFO | scrapy.extensions.throttle | slot: www.at-s.com | conc: 1 | delay: 5000 ms (+0) | latency: 2374 ms | size:   355 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: www.at-s.com | conc: 1 | delay: 5000 ms (+0) | latency: 2374 ms | size:   355 bytes
+
+2023-06-07 10:01:12,565 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:12,558 | DEBUG | scrapy.core.engine | Crawled (403) <GET https://www.at-s.com/news/article/shizuoka/1242688.html> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.at-s.com/news/article/shizuoka/1242688.html> (referer: None)
+
+2023-06-07 10:01:12,675 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,673 | DEBUG | scrapy.downloadermiddlewares.retry | Retrying <GET http://www.banvuvuzela.com?eone-vqfnl1987765-iws> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.banvuvuzela.com.
+2023-06-07 10:01:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.banvuvuzela.com?eone-vqfnl1987765-iws> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.banvuvuzela.com.
+
+2023-06-07 10:01:12,801 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,798 | INFO | scrapy.extensions.throttle | slot: www.bohuslaningen.se | conc: 1 | delay: 5000 ms (+0) | latency: 2494 ms | size:    85 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: www.bohuslaningen.se | conc: 1 | delay: 5000 ms (+0) | latency: 2494 ms | size:    85 bytes
+
+2023-06-07 10:01:12,811 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,800 | DEBUG | scrapy.downloadermiddlewares.redirect | Redirecting (301) to <GET https://www.bohuslaningen.se/nyheter/nytt-handelsforetag-startar-i-uddevalla.f53066cb-4fa8-57e3-bb23-872f1b41aff0> from <GET https://www.bohuslaningen.se/ekonomi/nya-foretag/nytt-handelsforetag-startar-i-uddevalla.f53066cb-4fa8-57e3-bb23-872f1b41aff0>
+2023-06-07 10:01:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bohuslaningen.se/nyheter/nytt-handelsforetag-startar-i-uddevalla.f53066cb-4fa8-57e3-bb23-872f1b41aff0> from <GET https://www.bohuslaningen.se/ekonomi/nya-foretag/nytt-handelsforetag-startar-i-uddevalla.f53066cb-4fa8-57e3-bb23-872f1b41aff0>
+
+2023-06-07 10:01:12,815 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,807 | INFO | scrapy.extensions.throttle | slot: www.haz.de | conc: 1 | delay: 2614 ms (-2385) | latency: 2298 ms | size: 58965 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: www.haz.de | conc: 1 | delay: 2614 ms (-2385) | latency: 2298 ms | size: 58965 bytes
+2023-06-07 10:01:12,813 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.haz.de/lokales/hannover/hannovers-streetfood-festival-2023-gnu-krake-und-zebra-VRMOGJSLGRF47MLXNKLWHJYWJY.html> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.haz.de/lokales/hannover/hannovers-streetfood-festival-2023-gnu-krake-und-zebra-VRMOGJSLGRF47MLXNKLWHJYWJY.html> (referer: None)
+
+2023-06-07 10:01:12,819 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,814 | INFO | scrapy.extensions.throttle | slot: www.preachingtoday.com | conc: 1 | delay: 2602 ms (-2397) | latency: 2041 ms | size: 63238 bytes
+2023-06-07 10:01:12 [scrapy.extensions.throttle] INFO: slot: www.preachingtoday.com | conc: 1 | delay: 2602 ms (-2397) | latency: 2041 ms | size: 63238 bytes
+2023-06-07 10:01:12,815 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.preachingtoday.com/illustrations/2023/may/inflated-giving.html> (referer: None)
+2023-06-07 10:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.preachingtoday.com/illustrations/2023/may/inflated-giving.html> (referer: None)
+
+2023-06-07 10:01:12,934 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,932 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:12 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:12,940 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,933 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12,933 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12,933 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12,934 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12,934 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:12,934 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:12,966 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:12,960 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:12 [pipeline.worker] DEBUG: send_items 1
+2023-06-07 10:01:12,960 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:12,961 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:12,961 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12,961 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:12,961 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:12 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:12,961 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:12 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:13,050 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:13,042 | INFO | scrapy.extensions.throttle | slot: www.kget.com | conc: 1 | delay: 2593 ms (-2406) | latency: 1874 ms | size:101885 bytes
+2023-06-07 10:01:13 [scrapy.extensions.throttle] INFO: slot: www.kget.com | conc: 1 | delay: 2593 ms (-2406) | latency: 1874 ms | size:101885 bytes
+
+2023-06-07 10:01:13,053 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:13,049 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.kget.com/news/homicide-news/family-friends-hold-vigil-for-lamont-homicide-victim/> (referer: None)
+2023-06-07 10:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.kget.com/news/homicide-news/family-friends-hold-vigil-for-lamont-homicide-victim/> (referer: None)
+
+2023-06-07 10:01:13,171 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:13,169 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:13 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:13,175 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:13,170 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7ff7be6aea90>>)
+2023-06-07 10:01:13,170 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:13,170 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:13 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:13,170 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:13,170 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:13,171 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:13 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37866), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:13,180 DEBG 'batchscraper_00' stderr output:
+2023-06-07 10:01:13,175 | INFO | scrapy.core.engine | Closing spider (finished)
+2023-06-07 10:01:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-06-07 10:01:13,176 | INFO | scrapy.statscollectors | Dumping Scrapy stats:
+{'downloader/request_bytes': 2738,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 294504,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 9,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 3.048864,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 6, 7, 5, 30, 53, 91679),
- 'httpcompression/response_bytes': 703921,
- 'httpcompression/response_count': 4,
- 'log_count/DEBUG': 41,
- 'log_count/INFO': 15,
+ 'finish_time': datetime.datetime(2023, 6, 7, 10, 1, 13, 176129),
+ 'httpcompression/response_bytes': 1650601,
+ 'httpcompression/response_count': 9,
+ 'log_count/DEBUG': 74,
+ 'log_count/INFO': 20,
  'log_count/WARNING': 1,
- 'memusage/max': 61067264,
- 'memusage/startup': 61067264,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2023, 6, 7, 5, 30, 47, 922841)}
-2023-06-07 05:30:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1451,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 178656,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
- 'elapsed_time_seconds': 5.168838,
+ 'memusage/max': 2652880896,
+ 'memusage/startup': 2652880896,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2023, 6, 7, 10, 1, 10, 127265)}
+2023-06-07 10:01:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2738,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 294504,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 9,
+ 'downloader/response_status_count/403': 1,
+ 'elapsed_time_seconds': 3.048864,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2023, 6, 7, 5, 30, 53, 91679),
- 'httpcompression/response_bytes': 703921,
- 'httpcompression/response_count': 4,
- 'log_count/DEBUG': 41,
- 'log_count/INFO': 15,
+ 'finish_time': datetime.datetime(2023, 6, 7, 10, 1, 13, 176129),
+ 'httpcompression/response_bytes': 1650601,
+ 'httpcompression/response_count': 9,
+ 'log_count/DEBUG': 74,
+ 'log_count/INFO': 20,
  'log_count/WARNING': 1,
- 'memusage/max': 61067264,
- 'memusage/startup': 61067264,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2023, 6, 7, 5, 30, 47, 922841)}
-2023-06-07 05:30:53,092 | INFO | scrapy.core.engine | Spider closed (finished)
-2023-06-07 05:30:53 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'memusage/max': 2652880896,
+ 'memusage/startup': 2652880896,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2023, 6, 7, 10, 1, 10, 127265)}
+2023-06-07 10:01:13,177 | INFO | scrapy.core.engine | Spider closed (finished)
+2023-06-07 10:01:13 [scrapy.core.engine] INFO: Spider closed (finished)
 
-2023-06-07 05:30:53,458 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 140241499177600 for <Subprocess at 140241499041744 with name batchscraper_01 in state RUNNING> (stdout)>
-2023-06-07 05:30:53,461 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 140241497289632 for <Subprocess at 140241499041744 with name batchscraper_01 in state RUNNING> (stderr)>
-2023-06-07 05:30:53,462 INFO exited: batchscraper_01 (exit status 0; expected)
-2023-06-07 05:30:53,464 DEBG received SIGCHLD indicating a child quit
+2023-06-07 10:01:13,266 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:13,264 | INFO | scrapy.extensions.throttle | slot: www.treta.com.br | conc: 1 | delay: 2627 ms (-2372) | latency: 2542 ms | size: 15366 bytes
+2023-06-07 10:01:13 [scrapy.extensions.throttle] INFO: slot: www.treta.com.br | conc: 1 | delay: 2627 ms (-2372) | latency: 2542 ms | size: 15366 bytes
+
+2023-06-07 10:01:13,270 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:13,266 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.treta.com.br/professora-choca-alunos-com-video-chocante/> (referer: None)
+2023-06-07 10:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.treta.com.br/professora-choca-alunos-com-video-chocante/> (referer: None)
+
+2023-06-07 10:01:13,385 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:13,383 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:13 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:13,388 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:13,383 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:13,383 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:13,384 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:13 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:13,384 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:13,385 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:13 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:13,385 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:13 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:14,438 DEBG fd 7 closed, stopped monitoring <POutputDispatcher at 139957147743088 for <Subprocess at 139957147743664 with name batchscraper_00 in state RUNNING> (stdout)>
+2023-06-07 10:01:14,441 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139957145997856 for <Subprocess at 139957147743664 with name batchscraper_00 in state RUNNING> (stderr)>
+2023-06-07 10:01:14,443 INFO exited: batchscraper_00 (exit status 0; expected)
+2023-06-07 10:01:14,445 DEBG received SIGCHLD indicating a child quit
+2023-06-07 10:01:17,282 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:17,280 | DEBUG | scrapy.downloadermiddlewares.retry | Retrying <GET http://www.banvuvuzela.com?eone-vqfnl1987765-iws> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.banvuvuzela.com.
+2023-06-07 10:01:17 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.banvuvuzela.com?eone-vqfnl1987765-iws> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.banvuvuzela.com.
+
+2023-06-07 10:01:19,215 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:19,213 | INFO | scrapy.extensions.throttle | slot: www.bohuslaningen.se | conc: 1 | delay: 2570 ms (-2429) | latency: 1401 ms | size: 74258 bytes
+2023-06-07 10:01:19 [scrapy.extensions.throttle] INFO: slot: www.bohuslaningen.se | conc: 1 | delay: 2570 ms (-2429) | latency: 1401 ms | size: 74258 bytes
+
+2023-06-07 10:01:19,220 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:19,217 | DEBUG | scrapy.core.engine | Crawled (200) <GET https://www.bohuslaningen.se/nyheter/nytt-handelsforetag-startar-i-uddevalla.f53066cb-4fa8-57e3-bb23-872f1b41aff0> (referer: None)
+2023-06-07 10:01:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bohuslaningen.se/nyheter/nytt-handelsforetag-startar-i-uddevalla.f53066cb-4fa8-57e3-bb23-872f1b41aff0> (referer: None)
+
+2023-06-07 10:01:19,336 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:19,334 | DEBUG | pipeline.worker | send_items 1
+2023-06-07 10:01:19 [pipeline.worker] DEBUG: send_items 1
+
+2023-06-07 10:01:19,338 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:19,335 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:19 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.set_writer(6, <bound method _AsyncPlaintextTransport._on_socket_writable of <pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f1106252c40>>)
+2023-06-07 10:01:19,335 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:19 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: set_writer(6, _) updated handler RdWr
+2023-06-07 10:01:19,335 | DEBUG | pika.adapters.utils.io_services_utils | Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:19 [pika.adapters.utils.io_services_utils] DEBUG: Turned on writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:19,335 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:19 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: SelectorIOServicesAdapter.remove_writer(6)
+2023-06-07 10:01:19,335 | DEBUG | pika.adapters.utils.selector_ioloop_adapter | remove_writer(6) updated handler Rd
+2023-06-07 10:01:19 [pika.adapters.utils.selector_ioloop_adapter] DEBUG: remove_writer(6) updated handler Rd
+2023-06-07 10:01:19,336 | DEBUG | pika.adapters.utils.io_services_utils | Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+2023-06-07 10:01:19 [pika.adapters.utils.io_services_utils] DEBUG: Turned off writability watcher: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.18.0.5', 37874), raddr=('172.18.0.2', 5672)>
+
+2023-06-07 10:01:21,009 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:21,007 | ERROR | scrapy.downloadermiddlewares.retry | Gave up retrying <GET http://www.banvuvuzela.com?eone-vqfnl1987765-iws> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.banvuvuzela.com.
+2023-06-07 10:01:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://www.banvuvuzela.com?eone-vqfnl1987765-iws> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.banvuvuzela.com.
+
+2023-06-07 10:01:21,211 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:21,209 | INFO | scrapy.core.engine | Closing spider (finished)
+2023-06-07 10:01:21 [scrapy.core.engine] INFO: Closing spider (finished)
+
+2023-06-07 10:01:21,217 DEBG 'batchscraper_01' stderr output:
+2023-06-07 10:01:21,210 | INFO | scrapy.statscollectors | Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 3,
+ 'downloader/request_bytes': 3448,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 491405,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 9,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 10.944292,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 6, 7, 10, 1, 21, 209976),
+ 'httpcompression/response_bytes': 1208995,
+ 'httpcompression/response_count': 7,
+ 'log_count/DEBUG': 76,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 20,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 61079552,
+ 'memusage/startup': 61079552,
+ 'response_received_count': 9,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 2,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2023, 6, 7, 10, 1, 10, 265684)}
+2023-06-07 10:01:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 3,
+ 'downloader/request_bytes': 3448,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 491405,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 9,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 10.944292,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 6, 7, 10, 1, 21, 209976),
+ 'httpcompression/response_bytes': 1208995,
+ 'httpcompression/response_count': 7,
+ 'log_count/DEBUG': 76,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 20,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 61079552,
+ 'memusage/startup': 61079552,
+ 'response_received_count': 9,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 2,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2023, 6, 7, 10, 1, 10, 265684)}
+2023-06-07 10:01:21,211 | INFO | scrapy.core.engine | Spider closed (finished)
+2023-06-07 10:01:21 [scrapy.core.engine] INFO: Spider closed (finished)
+
+2023-06-07 10:01:22,331 DEBG fd 10 closed, stopped monitoring <POutputDispatcher at 139957147882112 for <Subprocess at 139957147746256 with name batchscraper_01 in state RUNNING> (stdout)>
+2023-06-07 10:01:22,333 DEBG fd 14 closed, stopped monitoring <POutputDispatcher at 139957145998192 for <Subprocess at 139957147746256 with name batchscraper_01 in state RUNNING> (stderr)>
+2023-06-07 10:01:22,336 INFO exited: batchscraper_01 (exit status 0; expected)
+2023-06-07 10:01:22,339 DEBG received SIGCHLD indicating a child quit

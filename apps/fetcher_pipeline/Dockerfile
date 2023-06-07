@@ -7,4 +7,3 @@ COPY run.sh /app/run.sh
 
 
 RUN chmod +x run.sh
-
