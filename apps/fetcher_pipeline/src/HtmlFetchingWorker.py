@@ -12,8 +12,8 @@ from filesystem.state import WorkState
 
 from pipeline.worker import Worker, run
 
-from batcher import sample_backup_rss, rss_batcher
-from BatchSpider import BatchSpider
+from .batcher import sample_backup_rss, rss_batcher
+from .BatchSpider import BatchSpider
 
 
 class HtmlFetchingWorker(Worker):

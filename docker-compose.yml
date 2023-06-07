@@ -3,12 +3,12 @@ version: "3.8"
 services:
   elasticsearch:
     build:
-      context: elasticsearch/
+      context: apps/elasticsearch
       args:
         ELASTIC_VERSION: ${ELASTIC_VERSION:-7.10.1}
     volumes:
       - type: bind
-        source: ./elasticsearch/config/elasticsearch.yml
+        source: apps/elasticsearch/config/elasticsearch.yml
         target: /usr/share/elasticsearch/config/elasticsearch.yml
         read_only: true
       - elasticsearch_data:/usr/share/elasticsearch/data
@@ -44,13 +44,13 @@ services:
 
   es_pipeline:
     build:
-      context: es_pipeline
+      context: apps/es_pipeline
       dockerfile: Dockerfile
     environment:
       - RABBITMQ_URL=amqp://rabbitmq:5672
       - ELASTIC_URL=http://elasticsearch:9200/
     volumes:
-      - ./es_pipeline/logs:/tmp/consumer_worker
+      - ./apps/es_pipeline/logs:/tmp/consumer_worker
       - ./data:/app/data
     networks:
       - mc_elastic_network
@@ -63,12 +63,12 @@ services:
 
   fetcher_pipeline:
     build:
-      context: fetcher_pipeline
+      context: apps/fetcher_pipeline
       dockerfile: Dockerfile
     environment:
       - RABBITMQ_URL=amqp://rabbitmq:5672
     volumes:
-      - ./fetcher_pipeline/logs:/tmp/fetcher_demo
+      - ./apps/fetcher_pipeline/logs:/tmp/fetcher_demo
       - ./data:/app/data
     networks:
       - mc_elastic_network
